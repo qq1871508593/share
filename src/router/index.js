@@ -2,8 +2,8 @@
  * @Author: mojianpei
  * @description:
  * @Date: 2020-08-03 16:49:07
- * @LastEditors: mojianpei
- * @LastEditTime: 2021-03-16 20:49:49
+ * @LastEditors: 莫靓仔
+ * @LastEditTime: 2021-03-24 10:51:09
  */
 
 import Vue from "vue";
@@ -15,6 +15,9 @@ Vue.use(Router);
 
 const Body = resolve => {
   require(["cmt/body"], resolve);
+};
+const Attrs = resolve => {
+  require(["v/attrs"], resolve);
 };
 
 const Banner = resolve => {
@@ -38,21 +41,31 @@ const Name = () => import( /* webpackChunkName: 'abcd' */ "cmt/name");
 const List = () => import( /* webpackChunkName: 'abcd' */ "cmt/list");
 
 // 这里的routes需要concat，不能用const
-let routes = [{
+let routes = [
+  {
     path: "/",
     alias: "/home",
     name: "HelloWorld",
     component: HelloWorld,
     meta: {
       title: "首页",
-    },
-  }, {
+    }
+  },
+  {
     path: "/toolTip",
     name: "toolTip",
     component: toolTip,
     meta: {
       title: "toolTip",
     },
+  },
+  {
+    path: "/attrs",
+    name: "attrs",
+    component: Attrs,
+    meta: {
+      title: "attrs",
+    }
   },
   {
     path: "/user",
