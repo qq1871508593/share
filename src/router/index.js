@@ -3,7 +3,7 @@
  * @description:
  * @Date: 2020-08-03 16:49:07
  * @LastEditors: 莫靓仔
- * @LastEditTime: 2021-03-24 10:51:09
+ * @LastEditTime: 2021-04-23 10:00:05
  */
 
 import Vue from "vue";
@@ -35,6 +35,9 @@ const Menu = resolve => {
 const toolTip = resolve => {
   require(["v/toolTip"], resolve);
 };
+const baseTree = resolve => {
+  require(["v/tree"], resolve);
+};
 
 const User = () => import( /* webpackChunkName: 'abcd' */ "cmt/user");
 const Name = () => import( /* webpackChunkName: 'abcd' */ "cmt/name");
@@ -57,6 +60,14 @@ let routes = [
     component: toolTip,
     meta: {
       title: "toolTip",
+    },
+  },
+  {
+    path: "/baseTree",
+    name: "baseTree",
+    component: baseTree,
+    meta: {
+      title: "baseTree",
     },
   },
   {

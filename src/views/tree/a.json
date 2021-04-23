@@ -1,0 +1,221 @@
+{
+    "code": "sales_service_business",
+    "level": 1,
+    "children": [
+        {
+            "code": "sales_service_business_contract",
+            "level": 13,
+            "children": [
+                {
+                    "code": "sales_service_business_contract_view",
+                    "level": 0,
+                    "children": [],
+                    "is_view": true,
+                    "name": "查看",
+                    "id": "5fa8eccde01b997dbcbb6401",
+                    "type": 1,
+                    "isCheck": true,
+                    "disabled1": true,
+                    "checkAll": null
+                },
+                {
+                    "code": "sales_service_business_contract_edit",
+                    "level": 1,
+                    "children": [],
+                    "is_view": false,
+                    "name": "编辑",
+                    "id": "5fa8ecf7e01b997dbcbb6406",
+                    "type": 3,
+                    "isCheck": true,
+                    "disabled1": true,
+                    "checkAll": null
+                },
+                {
+                    "code": "sales_service_business_contract_delete",
+                    "level": 2,
+                    "children": [],
+                    "is_view": false,
+                    "name": "删除",
+                    "id": "5fa8ed07e01b997dbcbb6407",
+                    "type": 3,
+                    "isCheck": true,
+                    "disabled1": true,
+                    "checkAll": null
+                },
+                {
+                    "code": "sales_service_business_contract_upload",
+                    "level": 3,
+                    "children": [],
+                    "is_view": false,
+                    "name": "上传",
+                    "id": "5fa8ece3e01b997dbcbb6405",
+                    "type": 3,
+                    "isCheck": true,
+                    "disabled1": true,
+                    "checkAll": null
+                },
+                {
+                    "code": "sales_service_business_contract_confirm",
+                    "level": 4,
+                    "children": [],
+                    "is_view": false,
+                    "name": "确认合同",
+                    "id": "5facaebbe01b99056080d07f",
+                    "type": 3,
+                    "isCheck": true,
+                    "disabled1": true,
+                    "checkAll": null
+                }
+            ],
+            "is_view": false,
+            "name": "报价合同",
+            "id": "5fa8ecb9e01b997dbcbb63fa",
+            "type": 1,
+            "isCheck": true,
+            "disabled1": true,
+            "checkAll": null
+        },
+        {
+            "code": "sales_service_business_accessory",
+            "level": 14,
+            "children": [
+                {
+                    "code": "sales_service_business_accessory_view",
+                    "level": 0,
+                    "children": [],
+                    "is_view": true,
+                    "name": "查看",
+                    "id": "5fa8ed36e01b997dbcbb640b",
+                    "type": 1,
+                    "isCheck": true,
+                    "disabled1": true,
+                    "checkAll": null
+                },
+                {
+                    "code": "sales_service_business_accessory_add",
+                    "level": 1,
+                    "children": [],
+                    "is_view": false,
+                    "name": "添加",
+                    "id": "5fa8ed52e01b997dbcbb640c",
+                    "type": 3,
+                    "isCheck": true,
+                    "disabled1": true,
+                    "checkAll": null
+                },
+                {
+                    "code": "sales_service_business_accessory_edit",
+                    "level": 2,
+                    "children": [],
+                    "is_view": false,
+                    "name": "编辑",
+                    "id": "5fa8ed5ee01b997dbcbb640f",
+                    "type": 3,
+                    "isCheck": true,
+                    "disabled1": true,
+                    "checkAll": null
+                },
+                {
+                    "code": "sales_service_business_accessory_delete",
+                    "level": 3,
+                    "children": [],
+                    "is_view": false,
+                    "name": "删除",
+                    "id": "5fa8ed72e01b997dbcbb6410",
+                    "type": 3,
+                    "isCheck": true,
+                    "disabled1": true,
+                    "checkAll": null
+                }
+            ],
+            "is_view": false,
+            "name": "配件使用",
+            "id": "5fa8ed24e01b997dbcbb640a",
+            "type": 1,
+            "isCheck": true,
+            "disabled1": true,
+            "checkAll": null
+        },
+        {
+            "code": "sales_service_equipment",
+            "level": 15,
+            "children": [
+                {
+                    "code": "sales_service_equipment_add",
+                    "level": 0,
+                    "children": [],
+                    "is_view": false,
+                    "name": "添加",
+                    "id": "5fab8172e01b997ff85b76ea",
+                    "type": 3,
+                    "isCheck": true,
+                    "disabled1": true,
+                    "checkAll": null
+                },
+                {
+                    "code": "sales_service_equipment_delete",
+                    "level": 1,
+                    "children": [],
+                    "is_view": false,
+                    "name": "删除",
+                    "id": "5fab817fe01b997ff85b76f6",
+                    "type": 3,
+                    "isCheck": true,
+                    "disabled1": true,
+                    "checkAll": null
+                }
+            ],
+            "is_view": false,
+            "name": "服务设备",
+            "id": "5fab8164e01b997ff85b76e9",
+            "type": 1,
+            "isCheck": true,
+            "disabled1": true,
+            "checkAll": null
+        },
+        {
+            "code": "sales_service_business_close",
+            "level": 16,
+            "children": [
+                {
+                    "code": "sales_service_business_close_view",
+                    "level": 0,
+                    "children": [],
+                    "is_view": true,
+                    "name": "查看",
+                    "id": "5fbb4f44e01b9934a6fae05f",
+                    "type": 1,
+                    "isCheck": true,
+                    "disabled1": true,
+                    "checkAll": null
+                },
+                {
+                    "code": "sales_service_business_close_submit",
+                    "level": 1,
+                    "children": [],
+                    "is_view": false,
+                    "name": "提交",
+                    "id": "5fbb4f5de01b9934a6fae060",
+                    "type": 3,
+                    "isCheck": true,
+                    "disabled1": true,
+                    "checkAll": null
+                }
+            ],
+            "is_view": false,
+            "name": "归档结案",
+            "id": "5fa8ebb8e01b997dbcbb63dd",
+            "type": 1,
+            "isCheck": true,
+            "disabled1": true,
+            "checkAll": null
+        }
+    ],
+    "is_view": false,
+    "name": "服务单管理",
+    "id": "5e031c5ee01b99307dccf74b",
+    "type": 1,
+    "isCheck": true,
+    "disabled1": true,
+    "checkAll": null
+}
