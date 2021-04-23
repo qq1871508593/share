@@ -3,12 +3,13 @@
  * @description: 
  * @Date: 2021-03-16 20:41:52
  * @LastEditors: mojianpei
- * @LastEditTime: 2021-03-16 21:22:22
+ * @LastEditTime: 2021-04-15 15:59:16
 -->
 <template>
     <div class="box">
         <div class="box1">
             <p v-for="(item, index) in list" :key="index">{{item.title}}</p>
+            <name></name>
         </div>
         <div class="box2">
             <el-tooltip :placement="'top-start'" v-for="(item, index) in list" :key="index">
@@ -29,8 +30,15 @@
 </template>
 <script>
 // import baseTool from 'cmt/base-tool'
+import Name from '@/components/name'
 export default {
-    // components: { baseTool },
+    components: { Name },
+    created() {
+        console.log(1237)
+        console.log(1236)
+        console.log(1235)
+        console.log(1233)
+    },
     data() {
         return {
             list: [
@@ -50,7 +58,7 @@ export default {
                     title: 'sd，的发'
                 },
                 {
-                    title: 'sdfs， 水电费是，地方是，是的，是的，法师，的发，是，的发'
+                    title: 'sdfs， 水电费是，地方是师，的发，是，的发'
                 }
             ],
             toolTipContent: ''

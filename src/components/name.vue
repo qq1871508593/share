@@ -3,7 +3,7 @@
  * @description: 
  * @Date: 2020-08-03 19:34:19
  * @LastEditors: mojianpei
- * @LastEditTime: 2020-08-04 00:50:57
+ * @LastEditTime: 2021-04-14 20:09:10
 --> 
 <template>
   <div class="aa">
@@ -58,7 +58,8 @@ export default {
     // console.log("第二组第二条");
 
     // console.groupEnd();
-
+    debugger    
+    
     console.profile('性能分析器一');
     // this.Foo();
     console.profileEnd();
