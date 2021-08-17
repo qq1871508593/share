@@ -30,7 +30,7 @@ export default {
     mounted() {
         this.name1 = 123456789
         console.log(9999, this.name1)
-        debugger
+        // debugger
         console.log('listeners', this.$listeners)
         this.$listeners.changeName('123')
     }

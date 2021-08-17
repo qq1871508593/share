@@ -2,8 +2,8 @@
  * @Author: mojianpei
  * @description: 
  * @Date: 2020-08-03 19:34:19
- * @LastEditors: mojianpei
- * @LastEditTime: 2021-04-14 20:09:10
+ * @LastEditors: 莫靓仔
+ * @LastEditTime: 2021-06-28 12:20:40
 --> 
 <template>
   <div class="aa">
@@ -58,7 +58,7 @@ export default {
     // console.log("第二组第二条");
 
     // console.groupEnd();
-    debugger    
+    // debugger    
     
     console.profile('性能分析器一');
     // this.Foo();
