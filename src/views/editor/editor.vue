@@ -3,7 +3,7 @@
  * @description: 文件描述
  * @Date: 2021-08-13 16:27:54
  * @LastEditors: 莫靓仔
- * @LastEditTime: 2021-08-16 18:00:35
+ * @LastEditTime: 2021-08-30 16:21:00
 -->
 <template>
     <div class="tinymce-editor">
@@ -29,6 +29,7 @@ import 'tinymce/plugins/wordcount'
 import 'tinymce/plugins/charmap'
 import 'tinymce/plugins/media'
 import 'tinymce/plugins/image'
+import 'tinymce/plugins/imagetools' // 图片工具
 // import '/public/tinymce/plugins/lineheight'
 // import '@/assets/tinymce/plugins/lineheight'
 // import "@/assets/tinymce/langs/zh_CN.js";
@@ -50,7 +51,7 @@ export default {
         },
         plugins: {
             type: [String, Array],
-            default: 'link lists image code table wordcount advlist charmap media image'
+            default: 'link lists image imagetools code table wordcount advlist charmap media image'
         },
         toolbar: {
             type: [String, Array],
@@ -65,7 +66,7 @@ export default {
                 language: 'zh_CN', //语言
                 // skin_url: '/public/tinymce/skins/ui/oxide', //如果主题不存在，指定一个主题路径
                 // content_css: '/public/tinymce/mycontent.css',
-                height: 'auto',
+                height: '500px',
                 width: '100%',
                 plugins: this.plugins, //插件
                 toolbar: this.toolbar, //工具栏
@@ -75,12 +76,12 @@ export default {
                 branding: false, //技术支持(Powered by Tiny || 由Tiny驱动)
                 menubar: false, //菜单栏
                 statusbar: false,
-                theme: 'silver', //主题
+                // theme: 'silver', //主题
                 image_advtab: true,
-                images_upload_handler(blobInfo, success, failure) {
-                    console.log(blobInfo, success, failure)
-                    success('成功')
-                },
+                // images_upload_handler(blobInfo, success, failure) {
+                //     console.log(blobInfo, success, failure)
+                //     success('成功')
+                // },
                 file_picker_callback: this.upload,
                 setup: function(tinymce) {
                     console.log('Editor: ' + tinymce.Editor + ' is now initialized.')
@@ -88,7 +89,32 @@ export default {
                 fontsize_formats:
                     '10px 11px 12px 13px 14px 15px 16px 17px 18px 20px 22px 24px 26px 28px 30px 32px 34px',
                 lineheight_formats: '1 1.5 1.6 1.75 1.8 2 3 4 5 14px 15px 16px 18px 20px 22px 24px 26px 28px 30px 32px',
-                zIndex: 1101
+                zIndex: 1101,
+                // media_live_embeds: false,
+                video_template_callback: function(data) {
+                    return (
+                        '<video width="' +
+                        data.width +
+                        '" height="' +
+                        data.height +
+                        '"' +
+                        (data.poster ? ' poster="' + data.poster + '"' : '') +
+                        ' controls="controls">\n' +
+                        '<source src="' +
+                        data.source +
+                        '"' +
+                        (data.sourcemime ? ' type="' + data.sourcemime + '"' : '') +
+                        ' />\n' +
+                        (data.altsource
+                            ? '<source src="' +
+                              data.altsource +
+                              '"' +
+                              (data.altsourcemime ? ' type="' + data.altsourcemime + '"' : '') +
+                              ' />\n'
+                            : '') +
+                        '</video>'
+                    )
+                }
             },
             myValue: this.value
         }
